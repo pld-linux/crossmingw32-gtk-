@@ -82,14 +82,13 @@ Baþlangýçta GIMP için yazýlmýþ X kitaplýklarý. Þu anda baþka
 programlarca da kullanýlmaktadýr.
 
 %prep
-install -d gtk
-cd gtk && rm * -rf ; unzip %{SOURCE0} && cd ..
+%setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{arch}
 
-cp -rf gtk/* $RPM_BUILD_ROOT%{arch}
+cp -rf * $RPM_BUILD_ROOT%{arch}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
