@@ -18,9 +18,6 @@ Group:		Libraries
 Source0:	http://www.gimp.org/~tml/gimp/win32/gtk+-dev-%{version}-%{snap}.zip
 # Source0-md5:	56eff0fac89da0166b71901813775e86
 URL:		http://www.gtk.org/
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool
 Requires:	crossmingw32-glib2 >= 2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -95,5 +92,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{arch}/include/*
-%{arch}/lib/*
+%{arch}/include/g[dt]k
+%{arch}/lib/*.lib
+%{arch}/lib/*.dll.a
+%{arch}/lib/gtk+
+%{arch}/lib/pkgconfig/*.pc
