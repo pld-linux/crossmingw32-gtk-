@@ -1,4 +1,5 @@
-%define		realname		gtk+
+%define		realname	gtk+
+%define		snap	20030115
 Summary:	The Gimp Toolkit - Ming32 cross version
 Summary(cs):	Sada nástrojù pro Gimp
 Summary(de):	Der Gimp-Toolkit
@@ -11,10 +12,11 @@ Summary(pt_BR):	Kit de ferramentas Gimp
 Summary(tr):	Gimp ToolKit arayüz kitaplýðý
 Name:		crossmingw32-%{realname}
 Version:	1.3.0
-Release:	1
+Release:	0.%{snap}.1
 License:	LGPL
 Group:		Libraries
-Source0:	http://www.gimp.org/~tml/gimp/win32/gtk+-dev-1.3.0-20030115.zip
+Source0:	http://www.gimp.org/~tml/gimp/win32/gtk+-dev-%{version}-%{snap}.zip
+# Source0-md5:	56eff0fac89da0166b71901813775e86
 URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -94,4 +96,5 @@ cp gtk/* $RPM_BUILD_ROOT%{arch} -rf
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%{arch}
+%{arch}/include/*
+%{arch}/lib/*
