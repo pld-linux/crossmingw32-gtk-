@@ -21,7 +21,8 @@ URL:		http://www.gtk.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
-BuildRoot:	%{tmpdir}/%{realname}-%{version}-root-%(id -u -n)
+Requires:	crossmingw32-glib2 >= 2.0
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		no_install_post_strip	1
 
@@ -84,13 +85,11 @@ programlarca da kullanýlmaktadýr.
 install -d gtk
 cd gtk && rm * -rf ; unzip %{SOURCE0} && cd ..
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{arch}
-cp gtk/* $RPM_BUILD_ROOT%{arch} -rf
+
+cp -rf gtk/* $RPM_BUILD_ROOT%{arch}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
