@@ -12,7 +12,7 @@ Summary(pt_BR):	Kit de ferramentas Gimp
 Summary(tr):	Gimp ToolKit arayüz kitaplýðý
 Name:		crossmingw32-%{realname}
 Version:	1.3.0
-Release:	0.%{snap}.1
+Release:	0.%{snap}.2
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.gimp.org/~tml/gimp/win32/gtk+-dev-%{version}-%{snap}.zip
@@ -96,5 +96,6 @@ cp gtk/* $RPM_BUILD_ROOT%{arch} -rf
 rm -rf $RPM_BUILD_ROOT
 
 %files
+%defattr(644,root,root,755)
 %{arch}/include/*
 %{arch}/lib/*
