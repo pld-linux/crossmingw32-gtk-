@@ -1,12 +1,12 @@
 %define		realname		gtk+
-Summary:	The Gimp Toolkit
+Summary:	The Gimp Toolkit - Ming32 cross version
 Summary(cs):	Sada nástrojù pro Gimp
 Summary(de):	Der Gimp-Toolkit
 Summary(es):	Conjunto de herramientas Gimp
 Summary(fi):	Gimp-työkalukokoelma
 Summary(fr):	Le toolkit de Gimp
 Summary(it):	Il toolkit per Gimp
-Summary(pl):	Gimp Toolkit
+Summary(pl):	Gimp Toolkit - wersja skro¶na dla Ming32
 Summary(pt_BR):	Kit de ferramentas Gimp
 Summary(tr):	Gimp ToolKit arayüz kitaplýðý
 Name:		crossmingw32-%{realname}
