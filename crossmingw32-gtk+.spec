@@ -1,15 +1,15 @@
 %define		realname	gtk+
 %define		snap	20030115
 Summary:	The Gimp Toolkit - Ming32 cross version
-Summary(cs.UTF-8):   Sada nástrojů pro Gimp
-Summary(de.UTF-8):   Der Gimp-Toolkit
-Summary(es.UTF-8):   Conjunto de herramientas Gimp
-Summary(fi.UTF-8):   Gimp-työkalukokoelma
-Summary(fr.UTF-8):   Le toolkit de Gimp
-Summary(it.UTF-8):   Il toolkit per Gimp
-Summary(pl.UTF-8):   Gimp Toolkit - wersja skrośna dla Ming32
-Summary(pt_BR.UTF-8):   Kit de ferramentas Gimp
-Summary(tr.UTF-8):   Gimp ToolKit arayüz kitaplığı
+Summary(cs.UTF-8):	Sada nástrojů pro Gimp
+Summary(de.UTF-8):	Der Gimp-Toolkit
+Summary(es.UTF-8):	Conjunto de herramientas Gimp
+Summary(fi.UTF-8):	Gimp-työkalukokoelma
+Summary(fr.UTF-8):	Le toolkit de Gimp
+Summary(it.UTF-8):	Il toolkit per Gimp
+Summary(pl.UTF-8):	Gimp Toolkit - wersja skrośna dla Ming32
+Summary(pt_BR.UTF-8):	Kit de ferramentas Gimp
+Summary(tr.UTF-8):	Gimp ToolKit arayüz kitaplığı
 Name:		crossmingw32-%{realname}
 Version:	1.3.0
 Release:	0.%{snap}.2
